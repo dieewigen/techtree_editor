@@ -1,6 +1,9 @@
 <?php
 ignore_user_abort(true);
-include 'env.inc.php';
+
+if(file_exists(__DIR__ . '/env.inc.php')){
+	include 'env.inc.php';
+}
 
 if(!isset($db_host)){
 	$db_host='localhost';
