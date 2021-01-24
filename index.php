@@ -54,7 +54,6 @@ while($row = mysqli_fetch_array($db_daten)){
 		.str_replace(';','<br>',$row['tech_name']).
 		$kosten.
 		$bauzeit.
-			
 		'</div>';
 	
 	//echo $tech_field;
