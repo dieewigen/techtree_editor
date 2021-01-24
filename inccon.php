@@ -18,6 +18,6 @@ if(!isset($db_table)){
 	$db_table='de';
 }
 
-$GLOBALS['dbi'] = mysqli_connect($db_host, $db_user, $db_password, $db_table) or die("Keine Verbindung zur Datenbank m�glich.");
+$GLOBALS['dbi'] = mysqli_connect($db_host, $db_user, $db_password, $db_table) or die("Keine Verbindung zur Datenbank möglich.");
 $GLOBALS['dbi']->set_charset("utf8");
 ?>

@@ -24,7 +24,6 @@ if(isset($_REQUEST['newtech']) && $_REQUEST['newtech']==1){
 <body>
 <?php
 
-
 //alle Technologien aus der DB auslesen
 $db_daten=mysqli_query($GLOBALS['dbi'], "SELECT * FROM de_tech_data ORDER BY tech_level ASC, tech_sort_id ASC");
 //printf("Error: %s\n", mysqli_error($GLOBALS['dbi']));
@@ -43,8 +42,6 @@ while($row = mysqli_fetch_array($db_daten)){
 		$kosten.='<br>';
 		$kosten.=$value;
 	}
-	
-	
 	
 	$kosten.='</span>';
 	//Bauzeit
